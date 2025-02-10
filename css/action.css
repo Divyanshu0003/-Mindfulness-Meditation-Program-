@@ -1,0 +1,67 @@
+      body, html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Full viewport height and center alignment */
+        #myFormContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 80px); /* Adjust height to account for header/footer */
+            margin: 20px 0; /* Add margin for spacing */
+        }
+
+        /* Styling for form */
+        #myForm {
+            width: 90%;
+            max-width: 600px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            background-color: #fff;
+        }
+
+        /* Centering and formatting for header and footer */
+        .header, footer {
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .header .container-fluid, footer .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer .container .row {
+            margin: 0;
+        }
+ .hidden { display: none; }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar-nav {
+                text-align: center;
+            }
+            .navbar-nav li {
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .footer .row {
+                flex-direction: column;
+            }
+            .footer .col-md-4, .footer .col-md-8 {
+                margin-bottom: 20px;
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+       
